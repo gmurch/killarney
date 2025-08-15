@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ddad66f7f9747755552bef89a5bc910f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ddad66f7f9747755552bef89a5bc910f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ddad66f7f9747755552bef89a5bc910f = L.map(
+                "map_ddad66f7f9747755552bef89a5bc910f",
+                {
+                    center: [52.059, -9.506],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7a2c777af241c6d7ae55d330e808ef8e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+            var marker_9b3999ad5496366fb923925908d35c2a = L.marker(
+                [52.059, -9.506],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_14a57e3551838a134716a63dfce67a98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f6b069b52da7b15ee0946e30e234935 = $(`<div id="html_5f6b069b52da7b15ee0946e30e234935" style="width: 100.0%; height: 100.0%;"><b>Killarney</b><br>Start Point</div>`)[0];
+            popup_14a57e3551838a134716a63dfce67a98.setContent(html_5f6b069b52da7b15ee0946e30e234935);
+        
+
+        marker_9b3999ad5496366fb923925908d35c2a.bindPopup(popup_14a57e3551838a134716a63dfce67a98)
+        ;
+
+        
+    
+    
+            marker_9b3999ad5496366fb923925908d35c2a.bindTooltip(
+                `<div>
+                     Killarney
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afbeee2d2725d3fc244701598f851519 = L.marker(
+                [52.0545, -9.646],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_bd7ff101ccf5e709f753fc4dc9fdeb84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0af3acc64c6aa934decb89e9a63e6014 = $(`<div id="html_0af3acc64c6aa934decb89e9a63e6014" style="width: 100.0%; height: 100.0%;"><b>Gap of Dunloe (Kate Kearney’s Cottage)</b><br>Morning light in glacial valley</div>`)[0];
+            popup_bd7ff101ccf5e709f753fc4dc9fdeb84.setContent(html_0af3acc64c6aa934decb89e9a63e6014);
+        
+
+        marker_afbeee2d2725d3fc244701598f851519.bindPopup(popup_bd7ff101ccf5e709f753fc4dc9fdeb84)
+        ;
+
+        
+    
+    
+            marker_afbeee2d2725d3fc244701598f851519.bindTooltip(
+                `<div>
+                     Gap of Dunloe (Kate Kearney’s Cottage)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0b413b35f27117b2c1a854546e4ae5b = L.marker(
+                [52.012, -9.506],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_2cfc1eccfe3d3171d731274c26900498 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b946fcdfb34d6be176fc729e3daf594a = $(`<div id="html_b946fcdfb34d6be176fc729e3daf594a" style="width: 100.0%; height: 100.0%;"><b>Torc Waterfall</b><br>Short 5–10 min walk to falls</div>`)[0];
+            popup_2cfc1eccfe3d3171d731274c26900498.setContent(html_b946fcdfb34d6be176fc729e3daf594a);
+        
+
+        marker_f0b413b35f27117b2c1a854546e4ae5b.bindPopup(popup_2cfc1eccfe3d3171d731274c26900498)
+        ;
+
+        
+    
+    
+            marker_f0b413b35f27117b2c1a854546e4ae5b.bindTooltip(
+                `<div>
+                     Torc Waterfall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6eb30985bf2775275ea03b84afc91d76 = L.marker(
+                [51.963, -9.53],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_e86b22f6fa7a74b50ccb17fc37bb9508 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acd4adae90d993be86f9fa702882e351 = $(`<div id="html_acd4adae90d993be86f9fa702882e351" style="width: 100.0%; height: 100.0%;"><b>Ladies View</b><br>Panoramic lakes view</div>`)[0];
+            popup_e86b22f6fa7a74b50ccb17fc37bb9508.setContent(html_acd4adae90d993be86f9fa702882e351);
+        
+
+        marker_6eb30985bf2775275ea03b84afc91d76.bindPopup(popup_e86b22f6fa7a74b50ccb17fc37bb9508)
+        ;
+
+        
+    
+    
+            marker_6eb30985bf2775275ea03b84afc91d76.bindTooltip(
+                `<div>
+                     Ladies View
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1f02200b9a4b9276293f718b0133d13 = L.marker(
+                [51.836, -9.901],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_fb8133c543ad5c3221610e9fab30fe4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3caa50bef52cb79b9368884ed590b899 = $(`<div id="html_3caa50bef52cb79b9368884ed590b899" style="width: 100.0%; height: 100.0%;"><b>Sneem</b><br>Optional colorful village stop</div>`)[0];
+            popup_fb8133c543ad5c3221610e9fab30fe4c.setContent(html_3caa50bef52cb79b9368884ed590b899);
+        
+
+        marker_d1f02200b9a4b9276293f718b0133d13.bindPopup(popup_fb8133c543ad5c3221610e9fab30fe4c)
+        ;
+
+        
+    
+    
+            marker_d1f02200b9a4b9276293f718b0133d13.bindTooltip(
+                `<div>
+                     Sneem
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e22377464a2a9d4ef1e0e16fd0ec1c54 = L.marker(
+                [51.885, -10.338],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_4afc9a2f18ddf94cec46011b366c9018 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9867268813364a920bfc034d832ce0c = $(`<div id="html_b9867268813364a920bfc034d832ce0c" style="width: 100.0%; height: 100.0%;"><b>Coomanaspic Pass</b><br>Dramatic coastal pass</div>`)[0];
+            popup_4afc9a2f18ddf94cec46011b366c9018.setContent(html_b9867268813364a920bfc034d832ce0c);
+        
+
+        marker_e22377464a2a9d4ef1e0e16fd0ec1c54.bindPopup(popup_4afc9a2f18ddf94cec46011b366c9018)
+        ;
+
+        
+    
+    
+            marker_e22377464a2a9d4ef1e0e16fd0ec1c54.bindTooltip(
+                `<div>
+                     Coomanaspic Pass
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87cc9075c8ed4d784711f1d79f40cf68 = L.marker(
+                [51.897, -10.366],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_97c638ffcd1b11269a0d6cd08b39b5a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a2b46b301674196f93cc1826e954ee6 = $(`<div id="html_8a2b46b301674196f93cc1826e954ee6" style="width: 100.0%; height: 100.0%;"><b>Kerry Cliffs</b><br>View of Skellig Michael</div>`)[0];
+            popup_97c638ffcd1b11269a0d6cd08b39b5a1.setContent(html_8a2b46b301674196f93cc1826e954ee6);
+        
+
+        marker_87cc9075c8ed4d784711f1d79f40cf68.bindPopup(popup_97c638ffcd1b11269a0d6cd08b39b5a1)
+        ;
+
+        
+    
+    
+            marker_87cc9075c8ed4d784711f1d79f40cf68.bindTooltip(
+                `<div>
+                     Kerry Cliffs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33d16a44d0e2f19cfc0c5e31e28fbc73 = L.marker(
+                [51.832, -10.375],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_9f3cf340786578757f74a16d18fc3912 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3441d8542b6f94def1f6d113075b77f1 = $(`<div id="html_3441d8542b6f94def1f6d113075b77f1" style="width: 100.0%; height: 100.0%;"><b>Smugglers Inn</b><br>Late lunch with sea view</div>`)[0];
+            popup_9f3cf340786578757f74a16d18fc3912.setContent(html_3441d8542b6f94def1f6d113075b77f1);
+        
+
+        marker_33d16a44d0e2f19cfc0c5e31e28fbc73.bindPopup(popup_9f3cf340786578757f74a16d18fc3912)
+        ;
+
+        
+    
+    
+            marker_33d16a44d0e2f19cfc0c5e31e28fbc73.bindTooltip(
+                `<div>
+                     Smugglers Inn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7182a9ccd50f12c8220ed7f5f9df264a = L.marker(
+                [52.059, -9.935],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_07200671df6d41856f51258a8b41342c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1672df7c121c34c41d512314ce676f8 = $(`<div id="html_c1672df7c121c34c41d512314ce676f8" style="width: 100.0%; height: 100.0%;"><b>Rossbeigh Beach</b><br>Optional stop on return</div>`)[0];
+            popup_07200671df6d41856f51258a8b41342c.setContent(html_c1672df7c121c34c41d512314ce676f8);
+        
+
+        marker_7182a9ccd50f12c8220ed7f5f9df264a.bindPopup(popup_07200671df6d41856f51258a8b41342c)
+        ;
+
+        
+    
+    
+            marker_7182a9ccd50f12c8220ed7f5f9df264a.bindTooltip(
+                `<div>
+                     Rossbeigh Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c00c256525400a41c6a68d078862a8e5 = L.marker(
+                [52.059, -9.506],
+                {}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+    
+        var popup_8b89e2a898d70a734cd630df3389ba5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9202d8d02b8b0aa5f50e4613a01a4527 = $(`<div id="html_9202d8d02b8b0aa5f50e4613a01a4527" style="width: 100.0%; height: 100.0%;"><b>Return to Killarney</b><br>End Point</div>`)[0];
+            popup_8b89e2a898d70a734cd630df3389ba5b.setContent(html_9202d8d02b8b0aa5f50e4613a01a4527);
+        
+
+        marker_c00c256525400a41c6a68d078862a8e5.bindPopup(popup_8b89e2a898d70a734cd630df3389ba5b)
+        ;
+
+        
+    
+    
+            marker_c00c256525400a41c6a68d078862a8e5.bindTooltip(
+                `<div>
+                     Return to Killarney
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_79068bccc4d3433923e15b9bf802b519 = L.polyline(
+                [[52.059, -9.506], [52.0545, -9.646], [52.012, -9.506], [51.963, -9.53], [51.836, -9.901], [51.885, -10.338], [51.897, -10.366], [51.832, -10.375], [52.059, -9.935], [52.059, -9.506]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ddad66f7f9747755552bef89a5bc910f);
+        
+</script>
+</html>
